@@ -3,7 +3,8 @@ const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
-
+const botaoNovamente = document.querySelector(".novamente-btn);
+botaoNovamente.style.display = "none";                                              
 const perguntas = [
     {
         enunciado: "Como você vê o impacto a IA na educação?",
@@ -108,6 +109,20 @@ function mostraResultado() {
     caixaPerguntas.textContent = "Em 2049...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
+    caixaResultado.style.display = "block";
+
+    botaoNovamente.style.display = "block";
+
+    setTimeout(()=> {
+        reiniciarJogo();
+    },1000);
 }
 
-mostraPergunta();
+function reiniciarJogo() {
+    atual = 0;
+    historiaFinal = "";
+    caixaResultado.style.display = "none"; 
+    botãoNovamente.style.display = "none";
+    mostraPergunta();
+}
+
