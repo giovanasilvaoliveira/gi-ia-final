@@ -3,8 +3,8 @@ const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
-const botaoNovamente = document.querySelector(".novamente-btn);
-botaoNovamente.style.display = "none";                                              
+const botaoNovamente = document.querySelector(".novamente-btn)
+                                              
 const perguntas = [
     {
         enunciado: "Como você vê o impacto a IA na educação?",
@@ -115,7 +115,7 @@ function mostraResultado() {
 
     setTimeout(()=> {
         reiniciarJogo();
-    },2000);
+    }, 2000);
 }
 
 function reiniciarJogo() {
@@ -125,6 +125,3 @@ function reiniciarJogo() {
     botaoNovamente.style.display = "none";
     mostraPergunta();
 }
-
-
-
