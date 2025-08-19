@@ -122,8 +122,9 @@ function reiniciarJogo() {
     atual = 0;
     historiaFinal = "";
     caixaResultado.style.display = "none"; 
-    botãoNovamente.style.display = "none";
+    botaoNovamente.style.display = "none";
     mostraPergunta();
 }
+
 
 
