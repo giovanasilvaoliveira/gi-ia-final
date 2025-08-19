@@ -115,7 +115,7 @@ function mostraResultado() {
 
     setTimeout(()=> {
         reiniciarJogo();
-    },1000);
+    },2000);
 }
 
 function reiniciarJogo() {
@@ -125,4 +125,5 @@ function reiniciarJogo() {
     botãoNovamente.style.display = "none";
     mostraPergunta();
 }
+
 
