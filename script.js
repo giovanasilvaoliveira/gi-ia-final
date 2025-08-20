@@ -3,7 +3,7 @@ const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
-const botaoNovamente = document.querySelector(".novamente-btn);
+const botaoNovamente = document.querySelector(".novamente-btn");
                                               
   botaoNovamente.addEventListener("click", reiniciarJogo);                                           
  const perguntas = [
@@ -124,4 +124,5 @@ function reiniciarJogo() {
 
 // Inicia o jogo
 mostraPergunta();
+
 
